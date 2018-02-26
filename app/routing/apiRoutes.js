@@ -11,8 +11,40 @@ function apiRoutes (app) {
     })
 
     app.post('/api/friends', function(req,res){
-        console.log('Finding friends...')
+        //brackets added to end of key for some reason, investigate later...
+        var answers = req.body['scores[]'],
+            firstName = req.body.firstName,
+            lastName = req.body.lastName,
+            picUrl = req.body.picUrl
+
+        console.log(answers)
+        findFriend(res, answers)
     })
 }
 
+function findFriend (res, answers){
+    console.log('Finding friends...')
+    var match,
+        matchDiff = 100
+
+    friends.forEach(function(friend){
+            
+            var currentDiff = 0
+        
+        friend["scores[]"].forEach(function(score, ind){
+            var diff = Math.abs(Number(score) - Number(answers[ind]))
+            currentDiff += diff 
+        })
+
+        if(currentDiff < matchDiff){
+            matchDiff = currentDiff
+            match = friend
+        }
+    })
+
+    console.log(match)
+    res.send(match)
+}
+
 module.exports = apiRoutes
+
