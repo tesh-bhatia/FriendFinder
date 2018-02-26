@@ -1,0 +1,16 @@
+input[type=range]::-webkit-slider-thumb {
+    background-color:  rebeccapurple;
+  }
+  input[type=range]::-moz-range-thumb {
+    background-color:  rebeccapurple;
+  }
+  input[type=range]::-ms-thumb {
+    background-color: rebeccapurple;
+  }
+
+  input[type=range] + .thumb {
+    background-color: rebeccapurple;
+  }
+  input[type=range] + .thumb.active .value {
+    color:#dedede;
+  }
