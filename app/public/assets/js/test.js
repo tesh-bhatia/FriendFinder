@@ -27,8 +27,22 @@ $('#submit-btn').on('click', function(evt){
         picUrl: picUrl,
         scores: answers,
     }
-    //eventually make post request
+
     $.post('/api/friends', postData, function(data){
         console.log('Posted!')
+        console.log(data)
+        showMatch(data)
+        $('input').val('')
     })
 })
+
+function showMatch (match) {
+    $('#match_name').text(match.firstName + ' ' + match.lastName)
+    $('#match_pic > img').attr('src', match.picUrl)
+    $('#modal1').modal('open')
+}
+
+//Inits modal
+$(document).ready(function(){
+    $('.modal').modal();
+  });

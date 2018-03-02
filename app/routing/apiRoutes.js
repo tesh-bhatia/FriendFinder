@@ -18,20 +18,20 @@ function apiRoutes (app) {
             picUrl = req.body.picUrl
 
         console.log(answers)
-        findFriend(res, answers)
+        findFriend(res, answers, req.body)
     })
 }
 
-function findFriend (res, answers){
+function findFriend (res, answers, person){
     console.log('Finding friends...')
     var match,
         matchDiff = 100
 
     friends.forEach(function(friend){
-            
             var currentDiff = 0
-        
+        //cycle through each score
         friend["scores[]"].forEach(function(score, ind){
+
             var diff = Math.abs(Number(score) - Number(answers[ind]))
             currentDiff += diff 
         })
@@ -42,7 +42,7 @@ function findFriend (res, answers){
         }
     })
 
-    console.log(match)
+    friends.push(person)
     res.send(match)
 }
 

@@ -11,95 +11,127 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
 
 </head>
 <body>
-    SURVEY
-<div>
-    <div id="name">
-        <div class="input-field col s6">
-            <input id="first_name" type="text" class="validate">
-            <label for="first_name">First Name</label>
+<div id="survey-background">
+    <div class="container">
+        <div>
+            <div class="row">
+                <div id="name">
+                    <div class="input-field col s12 m6 l4">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s12 m6 l4">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+            
+                <div id="pic">
+                    <div class="input-field col s12 m6 l4">
+                        <input id="picture_url" type="text" class="validate">
+                        <label for="picture_url">Picture Url</label>
+                    </div>
+                </div>
+            </div>
+            
+        
         </div>
-        <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Last Name</label>
+        
+        <div id="questions">
+            <p id-"description">Rate how the following pictures make you feel from 0 (bad) to 5 (great)</p>
+            <form action="#">
+                    <img class="survey-img" src="http://lrrpublic.cli.det.nsw.edu.au/lrrSecure/Sites/Web/14160/at_school/graphics/old/child_runs_hoop_stick.jpg" alt="hoopstick">
+                    <p class="range-field">
+                      <input class="question" id="q1" type="range" min="0" max="5" />
+                    </p>
+                </form>
+            
+                <form action="#">
+                        <img class="survey-img" src="https://reesephoto.files.wordpress.com/2013/05/amish-kids-harness.jpg" alt="hoopstick">
+                    <p class="range-field">
+                      <input class="question" id="q2" type="range" min="0" max="5" />
+                    </p>
+                </form>
+            
+                <form action="#">
+                        <img class="survey-img" src="http://www.amish365.com/wp-content/uploads/2014/01/Ethridge-Tennessee-June-9-2011-016-edited-1-1024x680.jpg" alt="hoopstick">
+                    <p class="range-field">
+                      <input class="question" id="q3" type="range" min="0" max="5" />
+                    </p>
+                </form>
+            
+                <form action="#">
+                    <img class="survey-img" src="http://d1nnx3nhddxmeh.cloudfront.net/wp-content/uploads/2017/05/24090340/Amish-1.jpg" alt="hoopstick">
+                    <p class="range-field">
+                      <input class="question" id="q4" type="range"  min="0" max="5" />
+                    </p>
+                </form>
+            
+                <form action="#">
+                    <img class="survey-img" src="http://d1nnx3nhddxmeh.cloudfront.net/wp-content/uploads/2017/05/24133645/Amish-21-e1508926844342.jpg" alt="hoopstick">
+                    <p class="range-field">
+                      <input class="question" id="q5" type="range"  min="0" max="5" />
+                    </p>
+                </form>
+            
+                <form action="#">
+                     <img class="survey-img" src="https://www.higherambition.org/wp-content/uploads/2014/01/barn-raising.jpg">
+                      <input class="question" id="q6" type="range"  min="0" max="5" />
+                    </p>
+                </form>
+            
+                <form action="#">
+                    <img class="survey-img" src="https://www.roadunraveled.com/wp-content/uploads/2017/07/amsh-10.jpg" alt="hoopstick">
+                    <p class="range-field">
+                      <input class="question" id="q7" type="range"  min="0" max="5" />
+                    </p>
+                </form>
+            
+                <form action="#">
+                     <img class="survey-img" src="https://reesephoto.files.wordpress.com/2012/03/cellphone.jpg" alt="hoopstick">
+                    <p class="range-field">
+                      <input class="question" id="q8" type="range"  min="0" max="5" />
+                    </p>
+                </form>
+            
+                <form action="#">
+                    <img class="survey-img" src="https://www.roadunraveled.com/wp-content/uploads/2017/07/amsh-05.jpg" alt="hoopstick">
+                    <p class="range-field">
+                      <input class="question" id="q9" type="range"  min="0" max="5" />
+                    </p>
+                </form>
+            
+                <form action="#">
+                    <img class="survey-img" src="http://www.yuppee.com/wp-content/uploads/2014/06/Technology.jpg" alt="hoopstick">
+                    <p class="range-field">
+                      <input class="question" id="q10" type="range"  min="0" max="5" />
+                    </p>
+                </form>
+        
+                <button class="btn waves-effect waves-light purple" type="submit" name="action" id="submit-btn">Submit
+                    <i class="material-icons right">send</i>
+                </button>
         </div>
-    </div>
-    <div id="pic">
-        <div class="input-field col s6">
-            <input id="picture_url" type="text" class="validate">
-            <label for="picture_url">Picture Url</label>
         </div>
-    </div>
-
 </div>
 
-<div id="questions">
-    <form action="#">
-            <p class="range-field">
-              <input class="question" id="q1" type="range" min="0" max="5" />
-            </p>
-        </form>
-    
-        <form action="#">
-            <p class="range-field">
-              <input class="question" id="q2" type="range" min="0" max="5" />
-            </p>
-        </form>
-    
-        <form action="#">
-            <p class="range-field">
-              <input class="question" id="q3" type="range" min="0" max="5" />
-            </p>
-        </form>
-    
-        <form action="#">
-            <p class="range-field">
-              <input class="question" id="q4" type="range"  min="0" max="5" />
-            </p>
-        </form>
-    
-        <form action="#">
-            <p class="range-field">
-              <input class="question" id="q5" type="range"  min="0" max="5" />
-            </p>
-        </form>
-    
-        <form action="#">
-            <p class="range-field">
-              <input class="question" id="q6" type="range"  min="0" max="5" />
-            </p>
-        </form>
-    
-        <form action="#">
-            <p class="range-field">
-              <input class="question" id="q7" type="range"  min="0" max="5" />
-            </p>
-        </form>
-    
-        <form action="#">
-            <p class="range-field">
-              <input class="question" id="q8" type="range"  min="0" max="5" />
-            </p>
-        </form>
-    
-        <form action="#">
-            <p class="range-field">
-              <input class="question" id="q9" type="range"  min="0" max="5" />
-            </p>
-        </form>
-    
-        <form action="#">
-            <p class="range-field">
-              <input class="question" id="q10" type="range"  min="0" max="5" />
-            </p>
-        </form>
-
-        <button class="btn waves-effect waves-light purple" type="submit" name="action" id="submit-btn">Submit
-            <i class="material-icons right">send</i>
-        </button>
-</div>
+<div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>You've Matched!</h4>
+      <ul id="match_info">
+          <li id="match_name"></li>
+          <li id="match_pic"><img src="" alt=""></li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Hooray!</a>
+    </div>
+  </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>

@@ -1,3 +1,33 @@
+/* HOME PAGE -----------------------------*/
+#title{
+  font-family: 'Eczar', serif;
+  font-weight: bold;
+  color: floralwhite;
+  text-align: center;
+}
+
+#background{
+  background-color:  #4caf50;
+  height: 100vh;
+  padding-top: 20%;
+}
+
+#logo{
+  width:100%;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#get-started{
+  text-align: center;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 /* Sliders */
 input[type=range]::-webkit-slider-thumb {
   background-color:  #4caf50;
@@ -16,6 +46,7 @@ input[type=range] + .thumb.active .value {
   color: floralwhite;
 }
 
+
 /* Text input */
 .input-field input:focus + label {
   color: black !important;
@@ -23,4 +54,35 @@ input[type=range] + .thumb.active .value {
 .input-field input[type=text]:focus {
   border-bottom: 1px solid #4caf50 !important;
   box-shadow: 0 1px 0 0 #4caf50 !important;
+}
+
+#survey-background{
+  background-color: floralwhite;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 5% 0;
+}
+
+.survey-img{
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+form{
+  margin-bottom: 30px;
+}
+
+#description{
+  font-family: 'Eczar', serif;
+  font-weight: bold;
+  color: gray;
+  text-align: center;
+}
+
+@media screen and (min-width: 900px){
+  #questions{
+    padding: 0 15%;
+  }
 }
